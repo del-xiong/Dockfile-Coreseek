@@ -1,0 +1,1 @@
+xorm reverse mysql root@/search_slit?charset=utf8 /C/GoPath/src/github.com/go-xorm/cmd/xorm/templates/goxorm
