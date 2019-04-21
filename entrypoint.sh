@@ -1,7 +1,5 @@
 #!/bin/bash
-
-/usr/local/bin/indexer --all > /var/sphinx/log/indexer.log
-
-echo "Starting Sphinx"
+/usr/local/bin/indexer --all
+echo "start coreseek"
+nohup /usr/local/etc/sphinx/coreseek_autoindex > /dev/null 2>&1 &
 /usr/local/bin/searchd --nodetach
-
