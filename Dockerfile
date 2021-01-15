@@ -23,7 +23,7 @@ ADD ./coreseek /usr/local/src/coreseek
 RUN chmod 755 -R /usr/local/src/coreseek
 
 WORKDIR /usr/local/src/coreseek/mmseg-3.2.14
-RUN ./bootstrap
+RUN ./bootstrap --prefix=/usr/local/mmseg3
 RUN ./configure
 RUN make && make install
 
